@@ -1,0 +1,13 @@
+C:\dev\tech\desenvolvedorio\angular\avancado\projeto\back-end\src\DevIO.Data\bin\Debug\netcoreapp3.1\DevIO.Data.deps.json
+C:\dev\tech\desenvolvedorio\angular\avancado\projeto\back-end\src\DevIO.Data\bin\Debug\netcoreapp3.1\DevIO.Data.dll
+C:\dev\tech\desenvolvedorio\angular\avancado\projeto\back-end\src\DevIO.Data\bin\Debug\netcoreapp3.1\DevIO.Data.pdb
+C:\dev\tech\desenvolvedorio\angular\avancado\projeto\back-end\src\DevIO.Data\bin\Debug\netcoreapp3.1\DevIO.Business.dll
+C:\dev\tech\desenvolvedorio\angular\avancado\projeto\back-end\src\DevIO.Data\bin\Debug\netcoreapp3.1\DevIO.Business.pdb
+C:\dev\tech\desenvolvedorio\angular\avancado\projeto\back-end\src\DevIO.Data\obj\Debug\netcoreapp3.1\DevIO.Data.csproj.AssemblyReference.cache
+C:\dev\tech\desenvolvedorio\angular\avancado\projeto\back-end\src\DevIO.Data\obj\Debug\netcoreapp3.1\DevIO.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\tech\desenvolvedorio\angular\avancado\projeto\back-end\src\DevIO.Data\obj\Debug\netcoreapp3.1\DevIO.Data.AssemblyInfoInputs.cache
+C:\dev\tech\desenvolvedorio\angular\avancado\projeto\back-end\src\DevIO.Data\obj\Debug\netcoreapp3.1\DevIO.Data.AssemblyInfo.cs
+C:\dev\tech\desenvolvedorio\angular\avancado\projeto\back-end\src\DevIO.Data\obj\Debug\netcoreapp3.1\DevIO.Data.csproj.CoreCompileInputs.cache
+C:\dev\tech\desenvolvedorio\angular\avancado\projeto\back-end\src\DevIO.Data\obj\Debug\netcoreapp3.1\DevIO.Data.csproj.CopyComplete
+C:\dev\tech\desenvolvedorio\angular\avancado\projeto\back-end\src\DevIO.Data\obj\Debug\netcoreapp3.1\DevIO.Data.dll
+C:\dev\tech\desenvolvedorio\angular\avancado\projeto\back-end\src\DevIO.Data\obj\Debug\netcoreapp3.1\DevIO.Data.pdb

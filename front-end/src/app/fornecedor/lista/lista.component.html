@@ -1,0 +1,80 @@
+<div class="container main-container">
+
+    <ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="ball-pulse-sync" [fullScreen]="true"></ngx-spinner>
+
+    <div class="row justify-content-between">
+        <div class="col-md-8">
+            <h2>Fornecedores</h2>
+        </div>
+        <div class="col-md-4">
+            <div class="row justify-content-end mr-1">
+                <p><a class="btn btn-warning mr-1" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">Filtros</a></p>
+                <p><a class="btn btn-info" [routerLink]="['/fornecedor/adicionar-novo']">Novo Fornecedor</a></p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true" class="mb-3">
+        <form novalidate (ngSubmit)="buscar('1')" [formGroup]="buscaForm">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row justify-content-between">
+                        <div class="form-group col-md-8">
+                            <label>Nome</label>
+                            <input class="form-control" id="nome" type="text" placeholder="Nome do Fornecedor" formControlName="nome" />
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Documento</label>
+                            <input class="form-control" id="documento" type="text" placeholder="CPF/CNPJ" formControlName="documento" />
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card-footer align-items-end d-flex justify-content-end">
+                    <button class="btn btn-primary">Buscar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nome</th>
+                <th>Documento</th>
+                <th>Ativo?</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tr *ngFor="let fornecedor of fornecedores | paginate: config ">
+            <td>
+                {{ fornecedor.nome }}
+            </td>
+            <td>
+                {{fornecedor.tipoFornecedor === 1 ? (fornecedor.documento | cpf) : (fornecedor.documento | cnpj ) }}
+            </td>
+            <td>
+                <input [checked]="fornecedor.ativo" class="check-box" disabled="disabled" type="checkbox">
+            </td>
+            <td class="text-right">
+                <a class="btn btn-info" [routerLink]="['/fornecedor/detalhes',fornecedor.id]">
+                    <span class="fa fa-search"></span>
+                </a>&nbsp;
+                <a class="btn btn-warning" [routerLink]="['/fornecedor/editar',fornecedor.id]">
+                    <span class="fa fa-pencil-alt"></span>
+                </a>&nbsp;
+                <a class="btn btn-danger" [routerLink]="['/fornecedor/excluir',fornecedor.id]">
+                    <span class="fa fa-trash"></span>
+                </a>&nbsp;
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <div class="d-flex flex-row-reverse bd-highlight">
+        <pagination-controls (pageChange)="pageChange($event)" previousLabel='Anterior' nextLabel='Próximo'></pagination-controls>
+    </div>
+
+</div>

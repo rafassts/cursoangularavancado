@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bf5d5886-ce54-48df-a565-68752d66467f": {
+      "ProjectGuid": "bf5d5886-ce54-48df-a565-68752d66467f",
+      "DisplayName": "DevIO.Api",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
